@@ -8,13 +8,13 @@ import java.util.*
 @Entity(tableName = "noteTable")
 data class Note(
 
-    @ColumnInfo(name = "note")
+    @ColumnInfo(name = "title")
     var title: String,
 
-    @ColumnInfo(name = "note")
+    @ColumnInfo(name = "last_updated")
     var lastUpdated: Date,
 
-    @ColumnInfo(name = "note")
+    @ColumnInfo(name = "text")
     var text: String,
 
     @PrimaryKey(autoGenerate = true)
